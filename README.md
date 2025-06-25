@@ -99,15 +99,15 @@ El prototipo se ha construido con los siguientes componentes principales:
     *   1x Sensor de Flexión (Flex Sensor).
     *   1x Sensor de Electromiografía (EMG).
 *   **Actuadores:** 2x Motores DC con caja reductora.
-*   **Driver de Motores:** 1x Puente H L298N o similar.
+*   **Driver de Motores:** 1x Puente H L298N.
 *   **Feedback Visual:** 6x LEDs (Rojo, Amarillo, Verde para cada articulación).
 *   **Alimentación:** Batería LiPo y reguladores de voltaje adecuados.
-*   **Estructura Mecánica:** Impresa en 3D (PLA/PETG) o construida en aluminio.
+*   **Estructura Mecánica:** Impresa en 3D PLA o construida en aluminio.
 
 ## Software y Dependencias
 
 El firmware está desarrollado para el **framework de Arduino**.
-*   **Entorno de Desarrollo:** [Arduino IDE](https://www.arduino.cc/en/software) o [PlatformIO](https://platformio.org/) para VS Code.
+*   **Entorno de Desarrollo:** [Arduino IDE](https://www.arduino.cc/en/software).
 *   **Configuración de la Placa:** Se debe configurar el entorno para la placa "ESP32 Dev Module".
 *   **Librerías:** El código no requiere librerías externas, ya que utiliza funciones nativas del core de Arduino para ESP32 (`math.h`, `digitalWrite`, `analogRead`, etc.).
 
@@ -115,7 +115,7 @@ El firmware está desarrollado para el **framework de Arduino**.
 
 1.  **Clonar el Repositorio:**
     ```bash
-    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+    git clone https://github.com/PepMORART/Neurexo
     ```
 2.  **Configurar el Hardware:** Ensambla los componentes electrónicos siguiendo las definiciones de pines (`#define`) en la cabecera del fichero `.ino`.
 3.  **Abrir en el IDE:** Abre el fichero `.ino` en tu Arduino IDE o PlatformIO.
@@ -137,7 +137,6 @@ El código está contenido en un único fichero `.ino` y está organizado en mó
 
 Este proyecto sienta las bases para futuras mejoras:
 *   **Implementación de un Controlador PID Completo:** Mejorar el controlador P actual a un PID para una asistencia más suave y precisa.
-*   **Calibración Automática:** Desarrollar una rutina de calibración al inicio para ajustar automáticamente los umbrales de los sensores.
 *   **Grabación de Nuevos Gestos:** Implementar un modo "grabación" que permita al usuario enseñar nuevos movimientos al sistema.
 *   **Conectividad Inalámbrica:** Usar el WiFi o Bluetooth del ESP32 para enviar datos de telemetría a una aplicación móvil o un dashboard web.
 
@@ -149,7 +148,3 @@ Este proyecto se distribuye bajo la **Licencia MIT**. Consulta el fichero `LICEN
 
 *   **Jose Morcillo Artigas** - [GitHub](https://github.com/pepmorart) | [Correo](mailto:pep.m.artigas@gmail.com)
 
-## Agradecimientos
-
-*   Agradecimientos a [Nombre del Tutor/a] por su guía y apoyo durante el desarrollo de este proyecto.
-*   Inspirado por la comunidad de robótica de código abierto.
