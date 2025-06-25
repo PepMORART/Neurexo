@@ -55,9 +55,6 @@ El sistema está diseñado como una plataforma de investigación y validación t
 
 El sistema sigue una arquitectura jerárquica de tres capas, donde cada nivel tiene una responsabilidad clara.
 
-<p align="center">
-  <img src="URL_DE_TU_DIAGRAMA_DE_ARQUITECTURA" width="600" alt="Diagrama de Arquitectura"/>
-</p>
 
 ### Capa de Adquisición (Sensores)
 Responsable de la interacción con el hardware. Lee datos de los **encoders rotatorios** mediante interrupciones de hardware y muestrea periódicamente los sensores analógicos como el **sensor de flexión** y el **sensor EMG**.
